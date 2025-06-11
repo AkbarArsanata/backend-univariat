@@ -1,0 +1,30 @@
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git metadata
+.git
+.gitignore
+
+# Logs and temp files
+logs/
+*.log
+*.tmp
+
+# Development & test files
+*.db
+__pycache__
+
+# Dokumentasi opsional (tidak diperlukan di container)
+README.md
+LICENSE

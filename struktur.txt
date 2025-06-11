@@ -1,0 +1,16 @@
+time_series_ai_backend/
+│
+├── main.py                  # Utama, semua route di-mount
+├── overview.py              # Tab 1: Overview (ringkasan lengkap data time series yang telah diproses, termasuk metadata waktu, statistik deskriptif kolom target, dan informasi per kolom seperti tipe data, jumlah missing value, serta distribusi nilai)
+├── ai_insights.py           # Tab 2: AI Insights (analisis kluster berbasis waktu menggunakan algoritma K-Means untuk mengelompokkan data time series dan memberikan insight berupa pola musiman, tren, serta distribusi nilai target per kluster.)
+├── decomposition.py         # Tab 3: Time Series Decomposition (analisis time series yang lengkap dan aman dengan dukungan multi-model (additive, multiplicative, STL), deteksi periode otomatis via FFT, statistik lanjutan (tren, musim, noise), visualisasi komponen dalam base64)
+├── anomalies.py             # Tab 4: Anomaly Detection( deteksi anomali untuk data time series, termasuk Isolation Forest, Z-Score, Local Outlier Factor, dan SARIMAX Residuals, dilengkapi dengan visualisasi hasil, statistik anomali, distribusi bulanan, serta kemampuan filter berdasarkan rentang waktu.)
+├── calendar_view.py         # Tab 5: Calendar View (analisis pola musiman, perilaku harian/mingguan/bulanan, dampak libur, serta memvisualisasikan data time series dalam bentuk kalender tahunan dan perbandingan antar-tahun.)
+├── feature_analysis.py      # Tab 6: Feature Engineering ( analisis lengkap terhadap data time series, termasuk feature engineering (time-based, lag, rolling, dan expanding features), analisis statistik, uji stasioneritas, visualisasi korelasi dan lag plot, serta seleksi fitur otomatis menggunakan mutual information.)
+├── forecasting.py           # Tab 7: Forecasting
+├── utils.py                 # Fungsi bantu seperti load_data, prepare_time_series, dll
+├── models.py                # Model data jika diperlukan (misalnya untuk request body)
+├── stored_data.py           # Penyimpanan sementara hasil upload
+├── requirements.txt         # Daftar library Python
+└── struktur.txt             # Info singkat tentang proyek
+

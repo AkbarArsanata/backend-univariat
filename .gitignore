@@ -1,0 +1,38 @@
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.example
+.env.test
+.env.development
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Data files
+/data/
+/uploads/
+/*.csv
+/*.xlsx
+/*.json
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker volume
+volume/
